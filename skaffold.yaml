@@ -7,11 +7,13 @@ build:
     push: true
   artifacts:
     - image: shkrishnamoorthy/helloworld-spring
+      # buildpacks:
+      #   builder: "gcr.io/buildpacks/builder:v1"
       jib:
         args:
           - -Pjib
   tagPolicy:
-    gitCommit: {}
+    sha256: {}
 deploy:
   kubectl:
     manifests:

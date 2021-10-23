@@ -8,7 +8,8 @@ spec:
     spec:
       containers:
         - image: docker.io/shkrishnamoorthy/helloworld-spring
+          imagePullPolicy: Always
           env:
             - name: TARGET
-              value: "Spring Boot Sample v1"
+              value: "Spring Boot Sample v4"
 

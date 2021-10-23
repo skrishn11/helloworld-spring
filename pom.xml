@@ -51,7 +51,11 @@
 						<artifactId>jib-maven-plugin</artifactId>
 						<version>3.1.4</version>
 						<configuration>
-							<to>shkrishnamoorthy/helloworld-spring</to>
+							<to>docker.io/shkrishnamoorthy/helloworld-spring</to>
+							<auth>
+								<username>shkrishnamoorthy</username>
+								<password>Un1que234$</password>
+							</auth>
 						</configuration>
 					</plugin>
 				</plugins>

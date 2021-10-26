@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: hello
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - image: docker.io/shkrishnamoorthy/helloworld-spring
+          imagePullPolicy: Always
+          env:
+            - name: TARGET
+              value: "Spring Boot Sample v4"

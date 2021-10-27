@@ -11,4 +11,4 @@ spec:
           imagePullPolicy: Always
           env:
             - name: TARGET
-              value: "Spring Boot Sample v4"
+              value: "Spring Boot Sample v5"

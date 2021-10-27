@@ -17,4 +17,4 @@ build:
 deploy:
   kubectl:
     manifests:
-    - knative-service.yaml
+    - ./kustomize/knative-service.yaml
